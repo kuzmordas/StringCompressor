@@ -1,0 +1,18 @@
+<div class="form">
+    <div class="form__input-wrapper">
+        <label class="form__label"> Input String </label>
+        <input class="form__input" [(ngModel)]="stringForServer">
+    </div>
+    <div class="form__input-wrapper">
+        <label class="form__label"> {{resultLabelValue}} </label>
+        <input class="form__input" [(ngModel)]="responseString">
+    </div>
+    <div class="form__buttons">
+        <button class="form__button form__button_blue" (click)="send()">
+            <p class="button__content">{{actionButtonValue}}</p>
+        </button>
+        <button class="form__button form__button_red" (click)="clear()">
+            <p class="button__content">Clear</p>
+        </button>
+    </div>
+</div>
